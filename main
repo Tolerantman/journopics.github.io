@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Journopics | Academic Artwork Matter</title>
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Libre+Baskerville:wght@700&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --color-primary: #131F46;  /* Dark Navy */
+      --color-red: #C82035;      /* Strong Red */
+      --color-coral: #F46E6E;    /* Soft Coral */
+      --color-light: #FAFAFA;    /* Light Background */
+      --color-dark-bg: #1B274F;  /* Alt Dark Background */
+      --color-white: #FFFFFF;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Inter', sans-serif;
+    }
+
+    body {
+      background: var(--color-light);
+      color: var(--color-primary);
+      line-height: 1.6;
+    }
+
+    h1, h2, h3, h4, h5 {
+      font-family: 'Libre Baskerville', serif;
+      color: var(--color-primary);
+    }
+
+    a {
+      color: var(--color-red);
+      text-decoration: none;
+    }
+
+    header {
+      background: var(--color-white);
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    }
+
+    .logo {
+      font-weight: 700;
+      font-size: 1.25rem;
+      color: var(--color-primary);
+    }
+
+    nav ul {
+      display: flex;
+      gap: 1.5rem;
+      list-style: none;
+    }
+
+    nav li a:hover {
+      color: var(--color-coral);
+    }
+
+    .btn-primary {
+      background: var(--color-red);
+      color: var(--color-white);
+      padding: 0.75rem 1.5rem;
+      border-radius: 4px;
+      display: inline-block;
+      transition: background 0.2s ease;
+    }
+
+    .btn-primary:hover {
+      background: var(--color-coral);
+    }
+
+    section {
+      padding: 4rem 2rem;
+    }
+
+    .hero {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      gap: 1.5rem;
+    }
+
+    .hero h1 {
+      font-size: 2.5rem;
+    }
+
+    .hero p {
+      max-width: 640px;
+    }
+
+    .services {
+      background: var(--color-white);
+    }
+
+    .service-grid {
+      display: grid;
+      gap: 2rem;
+      margin-top: 2rem;
+    }
+
+    @media (min-width: 768px) {
+      .service-grid {
+        grid-template-columns: repeat(3, 1fr);
+      }
+    }
+
+    .service-card {
+      background: var(--color-light);
+      padding: 2rem;
+      border-radius: 8px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.03);
+    }
+
+    .footer {
+      background: var(--color-primary);
+      color: var(--color-white);
+      padding: 2rem;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <div class="logo">Journopics</div>
+    <nav>
+      <ul>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#portfolio">Portfolio</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero">
+    <h1>Academic Artwork Matter</h1>
+    <p>Transforming complex research into visuals that editors, reviewers, and readers immediately understand.</p>
+    <a href="#contact" class="btn-primary">Get a Quote</a>
+  </section>
+
+  <!-- Services -->
+  <section id="services" class="services">
+    <h2 style="text-align:center;">Our Services</h2>
+    <div class="service-grid">
+      <div class="service-card">
+        <h3>Graphical Abstracts</h3>
+        <p>Concept to journal‑ready graphic in 3‑5 days.</p>
+      </div>
+      <div class="service-card">
+        <h3>Journal Figures</h3>
+        <p>Redraws, annotations, high‑res exports.</p>
+      </div>
+      <div class="service-card">
+        <h3>Conference Posters</h3>
+        <p>Print & digital layouts that catch eyes.</p>
+      </div>
+      <div class="service-card">
+        <h3>Slide Decks</h3>
+        <p>Consistent templates & custom diagrams.</p>
+      </div>
+      <div class="service-card">
+        <h3>Infographics</h3>
+        <p>Multi‑panel outreach visuals.</p>
+      </div>
+      <div class="service-card">
+        <h3>Lab Subscription</h3>
+        <p>Monthly design support for busy labs.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section id="about">
+    <h2 style="text-align:center;">About Journopics</h2>
+    <p style="max-width:720px;margin:1rem auto;text-align:center;">We are a boutique scientific‑design studio helping researchers worldwide turn data, methods, and results into stunning graphical abstracts, journal figures, conference posters, and slide decks.</p>
+  </section>
+
+  <!-- Portfolio Placeholder -->
+  <section id="portfolio">
+    <h2 style="text-align:center;">Portfolio Highlights</h2>
+    <p style="text-align:center;">Coming soon—check back for our latest case studies.</p>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" style="background:var(--color-coral);color:var(--color-white);text-align:center;">
+    <h2>Let's Work Together</h2>
+    <p>Email us at <a href="mailto:hello@journopics.com" style="color:var(--color-white);text-decoration:underline;">hello@journopics.com</a></p>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p>© <span id="year"></span> Journopics — Because Academic Artwork Matter</p>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
